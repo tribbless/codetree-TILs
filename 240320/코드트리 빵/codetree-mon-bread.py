@@ -8,7 +8,7 @@ conv=[]
 for j in range(m):
     x,y = map(int,input().split())
     conv.append((x,y))
-    arr[x-1][y-1] = 2
+    #arr[x-1][y-1] = 2
 
 base = []
 for i in range(5):
