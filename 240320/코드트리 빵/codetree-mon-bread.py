@@ -13,11 +13,13 @@ for j in range(m):
     #arr[x-1][y-1] = 2
 
 base = []
-for i in range(5):
-    for j in range(5):
+for i in range(n):
+    for j in range(n):
         if arr[i][j] == 1:
             base.append((i+1,j+1))
             break
+
+        
 res = []
 for i in range(m):
     res.append(i +1 + abs(conv[i][0]-base[i][0]) + abs(conv[i][1]-base[i][1]))
